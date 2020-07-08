@@ -4,7 +4,7 @@
  *
  * Created on 8 July, 2020, 11:05 AM
  */
-
+// README: If your pic16f886 is unstable on a breadboard: 1. disable LVP in config1 and  2. set ANSELH = 0 to disable A/D. The A/D causes high internal currents that trigger low voltage programming, thus causing chip resets.
 // CONFIG1
 #pragma config FOSC = INTRC_NOCLKOUT// Oscillator Selection bits (INTOSCIO oscillator: I/O function on RA6/OSC2/CLKOUT pin, I/O function on RA7/OSC1/CLKIN)
 #pragma config WDTE = OFF       // Watchdog Timer Enable bit (WDT disabled and can be enabled by SWDTEN bit of the WDTCON register)
